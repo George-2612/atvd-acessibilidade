@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dark Mode</title>
+</head>
+
+<body>
+    <div class="container">
+        <input type="checkbox" id="btn" name="btn">
+        <label for="btn"></label>
+    </div>
+    <div class="texto">
+        <h1>George Souza Araujo</h1>
+
+        <h2>Sobre Mim</h2>
+        <p>Sou apaixonado por transformar ideias em realidade, combinando habilidades técnicas com criatividade.
+            Estou sempre em busca de novas oportunidades para aperfeiçoar minhas habilidades e trabalhar em projetos
+            desafiadores
+        </p>
+
+        <h2>Habilidades</h2>
+        <ul>
+            <li>JAVASCRIPT</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>BOOTSTRAP</li>
+            <li>JQUERY</li>
+            <li>SASS</li>
+            <li>SASS</li>
+            <LI>PHP</LI>
+        </ul>
+
+        <h2>Experiência</h2>
+        <P>Prefeitura do Recife — Estágio <br>
+            03/2022 - 09/2022 <br>
+            Eu executava atividades que abrangiam desde a atualização de software até a manutenção de planilhas e a
+            implementação de sistemas.</P>
+
+        <h2>Formação</h2>
+        <p>SENAC- Análise e Desenvolvimento de Sistemas <br>
+            03/2023 <br>
+            Neste momento, encontro-me no segundo semestre do curso de Análise e De</p>
+
+        <h2>Curso de capacitação</h2>
+        <ul>
+            <li>2022- Desenvolvimento web com Html, Css, Javascript e Php- 36H, Estácio</li>
+            <li>2023- Inovando com Css- 20H, Fundação Bradesco</li>
+            <li>2023- Desenvolvimento Front-end e Back-end Html, Css, Sql, Javascript, PhP, Bootstrap, Ajax, Jquery,
+                Ionic e Wordpress- 114H, Udemy (Cursando)</li>
+        </ul>
+    </div>
+    <script>
+         const btn = document.getElementById("btn");
+        
+        btn.addEventListener("change", (e) => {
+        document.body.classList.toggle("dark", e.target.checked);
+        })
+    </script>
+</body>
+
+</html>
